@@ -24,7 +24,7 @@ ON a.category_code = b.category_code;  -- a에도 포함되어있고 b에도 포
 
 -- LEFT JOIN
 -- 첫번째 테이블의 모든 데이터와 두 번째 테이블에서 일치하는
--- 데이터를 반환하는 join
+-- 데이터를 반환하는 join                                 //위의 JOIN과 다른거는 LEFT JOIN에는 null값이 포함된것들도 다 출력된다. 위에는 교집합만 출력!
 SELECT
  a.category_name,
  b.menu_name
